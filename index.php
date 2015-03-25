@@ -2,9 +2,6 @@
   $out = shell_exec('curl -s "http://www.digitalchampions.it/?geo_mashup_content=geo-query&map_name=gm-map" | in2csv -k objects | csvjson --lat lat --lon lng | jq . > dc.json');
   echo "<pre>$out</pre>";
 
-
-//getContent  ('http://www.digitalchampions.it/?geo_mashup_content=geo-query&map_name=gm-map');
-
 ?>
 
 <!DOCTYPE html>
